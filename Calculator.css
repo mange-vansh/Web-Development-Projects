@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+}
+
+#calculator {
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+}
+
+#screen {
+    background-color: #000;
+    color: #0ff;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+    height: 60px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    background-color: #666;
+}
+
+button:focus {
+    outline: none;
+}
+
+.operators {
+    background-color: #f39c12;
+}
+
+.operators:hover {
+    background-color: #e67e22;
+}
+
+.operators:active {
+    background-color: #d35400;
+}
+
+#clear {
+    background-color: #e74c3c;
+    width: 150px;
+}
+
+#clear:hover {
+    background-color: #c0392b;
+}
+
+#clear:active {
+    background-color: #a93226;
+}
+
+#answer {
+    background-color: #27ae60;
+    width: 150px;
+}
+
+#answer:hover {
+    background-color: #2ecc71;
+}
+
+#answer:active {
+    background-color: #1e8449;
+}
+
+#answer, #clear{
+    display: inline-block;
+    vertical-align: middle;
+}
